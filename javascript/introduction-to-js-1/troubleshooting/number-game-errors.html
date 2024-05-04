@@ -36,17 +36,19 @@
 <div class="resultParas">
   <p class="guesses"></p>
   <p class="lastResult"></p>
-  <p class="lowOrHi"></p>
+  <p class=".lowOrHi"></p>
 </div>
 
 </body>
 
 <script>
-  let randomNumber = Math.floor(Math.random()) + 1;
+  let randomNumber = Math.floor(Math.random() *100) + 1;
+	console.log(randomNumber);
 
   const guesses = document.querySelector('.guesses');
   const lastResult = document.querySelector('.lastResult');
   const lowOrHi = document.querySelector('lowOrHi');
+	console.log(lowOrHi);
   const guessSubmit = document.querySelector('.guessSubmit');
   const guessField = document.querySelector('.guessField');
 
@@ -110,7 +112,9 @@
 
 	  lastResult.style.backgroundColor = 'white';
 
-	  randomNumber = Math.floor(Math.random()) + 1;
+	  randomNumber = Math.floor(Math.random() *100) + 1;
+	  console.log(randomNumber);
+
   }
 </script>
 </html>
